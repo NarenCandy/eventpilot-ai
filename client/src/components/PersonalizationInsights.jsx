@@ -21,7 +21,7 @@ export default function PersonalizationInsights({ insights }) {
 
         <div className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-purple-500/10 border border-purple-500/30 text-purple-300 text-xs font-medium">
           <Sparkles className="w-3.5 h-3.5" />
-          <span>Powered by {modelUsed || 'Google Gemini 1.5 Flash'}</span>
+          <span>Powered by {modelUsed || 'Google Gemini Flash Latest'}</span>
         </div>
       </div>
 

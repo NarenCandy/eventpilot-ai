@@ -21,7 +21,7 @@ export function getGeminiModel() {
   }
   const genAI = new GoogleGenerativeAI(apiKey);
   // Default to fast, capable flash model
-  return genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
+  return genAI.getGenerativeModel({ model: 'gemini-flash-latest' });
 }
 
 /**
@@ -72,7 +72,7 @@ Respond ONLY with valid JSON. Do not include markdown code block formatting or b
     
     const resultData = {
       isAiGenerated: true,
-      modelUsed: 'gemini-1.5-flash',
+      modelUsed: 'gemini-flash-latest',
       data: parsed
     };
 

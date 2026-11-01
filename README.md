@@ -58,8 +58,8 @@ As required by the hackathon submission criteria, GenAI is embedded directly wit
 
 | GenAI Use Case | Engine / Model | Trigger & Ingestion | Output & Value |
 |---|---|---|---|
-| **Adaptive Attendee Personalization** | Google Gemini (`gemini-1.5-flash`) via Google AI Studio | Triggered during Guided Intake (Step 2) and on Re-Planning | Synthesizes customized event themes, concrete accessibility and sensory checklist items, and respectful heritage-honoring customs. |
-| **Pacing & Negotiation Intelligence** | Google Gemini (`gemini-1.5-flash`) | Guided Intake analysis | Formulates guest schedule pacing tips (transition buffers, sensory downtime) and a customized 2-sentence vendor negotiation brief. |
+| **Adaptive Attendee Personalization** | Google Gemini (`gemini-flash-latest`) via Google AI Studio | Triggered during Guided Intake (Step 2) and on Re-Planning | Synthesizes customized event themes, concrete accessibility and sensory checklist items, and respectful heritage-honoring customs. |
+| **Pacing & Negotiation Intelligence** | Google Gemini (`gemini-flash-latest`) | Guided Intake analysis | Formulates guest schedule pacing tips (transition buffers, sensory downtime) and a customized 2-sentence vendor negotiation brief. |
 | **Resilient In-Memory Caching & Graceful Fallback** | Backend caching layer + deterministic heuristic engine | Request handler | Caches identical parameter calls to avoid redundant API consumption and rate limit exhaustion, falling back to an in-memory rule engine if API keys or network are offline. |
 
 > **Security Note:** The Gemini API key is strictly maintained backend-side (`server/.env` / Render environment variables) and is never exposed client-side.
